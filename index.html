@@ -2,17 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Car-Animal Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator App</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Car-Animal Generator</h1>
-        <div id="result" class="result">
-            Click Generate to start!
+    <!-- Universal Header Start -->
+    <header class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="path/to/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                Subdomain generator
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="ri-home-line me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="line-remover.html">
+                            <i class="ri-delete-bin-line me-1"></i> Line Remover
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="text-tools.html">
+                            <i class="ri-tools-line me-1"></i> Text Tools
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="ri-information-line me-1"></i> About
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <button id="generateBtn">Generate</button>
+    </header>
+    <!-- Universal Header End -->
+
+    <div class="container main-content">
+        <h1 class="text-center my-4">Subdomain generator</h1>
+        <div class="button-group">
+            <button id="carAnimalBtn" class="btn btn-dark">Car - Animal</button>
+            <button id="babyCountryBtn" class="btn btn-dark">Baby Name - Country</button>
+            <button id="cityMotorcycleBtn" class="btn btn-dark">City - Motorcycle</button>
+        </div>
+        <div id="result" class="result text-center"></div>
     </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
 </html>
